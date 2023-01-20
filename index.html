@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+  <script type="text/javascript" src="js/aos.js"></script>
+
+
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+
+
+  <meta property="og:image" content="logo-beli-sa-slovima-org.jpg" />
+
+  <meta property="og:image:alt" content="logo-beli-sa-slovima-siroki">
+
+  <meta property="og:image:type" content="image/jpg" />
+
+  <meta property="og:image:width" content="560px" />
+
+  <meta property="og:image:height" content="642px" />
+
+  <meta name="description" content="Oasis Center je najprestižniji i najluksuzniji wellness i fitness centar u Beogradu, gde je moguće doživeti potpuni oporavak tela i duha. Vrhunska oprema i profesionalno osoblje će učiniti da se osećate preporođenim. Posle 10 godina iskustva u Dubaiju, Zorica Dimitrijević je otvorila svoj jedinstveni centar u Beogradu. Vođena idejom da prenese raskoš i egzotiku Dubaija, kao i prefinjene tehnike za negu zdravlja, Zoriica Dimitrijević osniva sopstvenu oazu u sred Beograda.
+  Zdravlje je najdragoceniji resurs svakog od nas. Ako na svom poslu dajete sve od sebe, onda zaslužujete da i sami dobijete vrhunske uslove za oporavak.">
+
+	<title>Oasis Center</title>
+
+</head>
+
+<style type="text/css">  
+
+  html {
+
+    scroll-behavior: smooth;
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+  body {
+
+    margin: 0;
+
+    padding: 0;
+
+		background-color: #333;
+
+		color: #f1f1f1;
+
+    overflow-x:hidden;
+
+    font-family: 'Montserrat';
+
+  }
+
+  .loader {
+
+  height: 50px;
+
+  transform-origin: bottom center;
+
+  animation: rotate 2s linear infinite;
+
+}
+
+.circle {
+
+  display: inline-block;
+
+  background-color: var(--bkgRed);
+
+  height: 40px;
+
+  width: 40px;
+
+  border-radius: 50%;
+
+  transform: scale(0);
+
+  animation: grow 1s linear infinite;
+
+  margin: -10px;
+
+}
+
+
+
+.bkg {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  height: 100%;
+
+  width: 100%;
+
+  background-color: #111;
+
+opacity: 0.8;
+
+background-image: radial-gradient(#369f53 1.5px, transparent 1.5px), radial-gradient(#369f53 1.5px, transparent 1.5px);
+background-size: 41px 41px;
+background-position: 0 0, 20.5px 20.5px;
+background-color: #225a5d;
+z-index: -1;
+
+}
+
+  header, section {
+
+    z-index: 2;
+
+  	min-height: 100vh;
+
+  }
+
+  a {
+
+    text-decoration: none;
+
+    color: #000;
+
+  }
+
+	header h1 {
+
+		font-size: 70px;
+
+	}
+
+	.bow {
+
+		background-color: #222;
+
+		color: #5EB275;
+
+	}
+.bold {
+  font-weight: bold;
+}
+	.wob {
+
+		background-color: #222;
+
+		color: #f1f1f1;
+
+	}
+
+  .boor {
+    opacity: 0.8;
+    background-image: radial-gradient(#369f53 1.5px, transparent 1.5px), radial-gradient(#369f53 1.5px, transparent 1.5px);
+    background-size: 41px 41px;
+    background-position: 0 0, 20.5px 20.5px;
+    background-color: #225a5d;
+
+    color: #fff;
+
+  }
+nav {  
+
+  position: fixed;
+  top: 30px;
+  padding-top: 5px;
+
+  padding-bottom: 5px;
+
+  height: 50px;
+
+  width: 100%;
+
+  animation: fadingIn 4s;
+  transition: all 600ms ease-in-out;
+  z-index: 1000;
+}
+nav.scrolled-nav { 
+}
+nav	.ulNav {
+    display: inline-block;
+    margin: 0 17% 0 0;
+    float: right;
+    line-height: 1;
+    text-align: right;
+    background-color: #90C9E3;
+    color: #000;
+  transition: all 600ms ease-in-out;
+  }
+nav.scrolled-nav .ulNav {
+    background-color: #0C4076;
+    color: #fff;
+}
+nav.scrolled-nav .liNav a {
+  color: #fff;
+  transition: all 600ms ease-in-out;
+}
+  .liNav {
+
+    display: inline-block;
+
+    padding: 20px;
+
+    letter-spacing: 1.5px;
+
+    font-size: 22px;
+
+  }
+
+  .navLogo {
+    vertical-align: middle;
+  	height: 75px;
+  	margin-left: 150px;
+  transition: all 600ms ease-in-out;
+  }
+  nav.scrolled-nav .navLogo{
+    padding: 7px;
+    background-color: #0C4076;
+    border-radius: 50px;
+    border: 2px solid #333;
+  }
+  header .row {
+ padding-top: 150px;
+  }
+  .row {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+}
+
+.half {
+
+  width: 50%;
+
+}
+
+.half23 {
+
+  display: inline-block;
+
+  width: 65%;
+
+}
+
+.half23 p {
+
+  padding: 10px 15px;
+
+  font-size: 24px;
+
+  line-height: 1.5;
+
+}
+
+.half23 div {
+
+  padding: 7px 10px;
+
+  font-size: 17px;
+
+}
+
+.half13 h3 {
+
+  font-size: 24px;
+
+}
+
+.half23 img {
+
+  width: 100%;
+
+  border-radius: 4px;
+
+}
+
+.half13 {
+
+  width: 32%;
+
+  display: inline-block;
+
+}
+
+.txtHld {
+
+  padding: 23px 20px 15px 25px;
+
+  font-size: 22px;
+
+}
+
+.txt-holder {
+
+  position: relative;
+
+  padding: 1.5rem;
+
+  font-size: 1.25em;
+
+}
+
+.txt-holder a {
+
+  display: block;
+
+  padding: 10px 0;
+
+  color: #fff;
+
+  cursor: pointer;
+
+}
+
+.txt-holder a:hover {
+
+  text-decoration: underline;
+
+}
+
+.txtCntr {
+
+	text-align: center;
+
+}
+
+.card-text {
+
+  padding-left: 1.5rem;
+
+  padding-right: 1.5rem;
+
+}
+
+
+
+.angled {
+
+  position: absolute;
+
+  background-color: #222;
+
+  overflow: hidden;
+
+  height: 18%;
+
+  width: 110%;
+
+  transform-origin: top left;
+
+  transform: rotate(-10deg);
+
+  z-index: 0;
+
+}
+
+.blogCard {
+
+  padding-bottom: 10px;
+
+  background-color: #222;
+
+  color: #fff;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+
+.blogCard a, .blogCard p {
+
+  position: relative;
+
+  z-index: 2;
+
+  text-align: right;
+
+}
+
+.blogCardText {
+
+  position: relative;
+
+  padding-left: 5%;
+
+  padding-right: 5%;
+
+}
+
+.blogCardText a {
+
+  text-align: right;
+
+  color: #fff;
+
+}
+
+.blogCardText i {
+
+ position: absolute;
+
+ left: 5%;
+
+ bottom: 15%;
+
+ color: #777;
+
+ font-size: 30px;
+
+ opacity: 0.4;
+
+}
+
+.inline {
+
+  display: inline;
+
+}
+
+.pt-20 {
+
+  padding-top: 20px;
+
+}
+
+.pt-50 {
+
+	padding-top: 50px;
+
+}
+
+.btnHld {
+
+	padding-top: 50px;
+
+}
+
+.btn {
+
+	padding: 10px 15px;
+
+	background-color: #e5c100;
+
+	color: #222;
+
+}
+
+
+
+.col3 {
+
+    display: inline-block;
+
+    width: 30%;
+
+}
+
+.relative {
+
+  position: relative;
+
+}
+
+.sliderimg {
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 10px;
+
+  transform: translate(-50%);
+
+  width: 100%;
+
+  max-height: 400px;
+  width: auto;
+
+  border-radius: 25px;    
+
+  opacity:0;
+
+  transition:opacity 0.4s ease-in-out
+
+}
+
+.sliderimg.curr {
+
+  opacity: 1;
+
+}
+
+  .imgs img {
+
+    width: 90%;
+
+  } 
+/*.imgs img:last-of-type {
+
+    width: 96%;
+
+  }*/
+
+  .overlaid {
+
+  position: fixed; /* Sit on top of the page content */
+
+  display: none; /* Hidden by default */
+
+  width: 100%; /* Full width (cover the whole page) */
+
+  height: 100%; /* Full height (cover the whole page) */
+
+  top: 0; 
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background-color: rgba(0,0,0,0.75); /* Black background with opacity */
+
+  z-index: 50; /* Specify a stack order in case you're using a different order for other elements */
+
+  cursor: pointer; /* Add a pointer on hover */
+
+}
+
+.overlay-appear {
+
+  display: block;
+
+}
+.credits {
+  font-size: 10px;
+}
+.infoCard {
+  vertical-align: top;
+  background-color: #222;
+    margin: 1rem;
+    padding: 1rem;
+    vertical-align: middle;
+    max-width: 650px;
+    min-width: 320px;
+    border: 2px #d7d7d7 solid;
+    -webkit-box-shadow: 10px 10px 30px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px 0px rgb(0 0 0 / 75%);
+}
+@media(max-width: 1050px) {
+
+  .half {
+
+    width: 100%;
+
+  }
+
+  .half23, .half13 {
+
+    width: 100%;
+
+    display: block;
+
+  }
+
+  .blogCard1, .blogCard2 {
+
+    margin: 15px auto;
+
+  }
+
+  nav {
+
+  position: absolute;
+
+  top: 50%;
+
+  padding-top: 5px;
+
+  padding-bottom: 5px;
+
+  height: 50px;
+
+  width: 100%;
+
+  z-index: 1500;
+
+  position: fixed;
+
+}
+nav .ulNav{
+  margin: 0;
+    background-color: #0C4076;
+}.ulNav {
+  position: absolute;
+    right: 0;
+    background-color: #0C4076;
+    padding: 0;
+    width: 65%;
+    transform-origin: right;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .ulNav .liNav {
+
+    display: block;
+
+    text-align: center;
+    border: 1px solid #fff;
+
+    z-index: 25;
+
+  } 
+
+  .ulNav .liNav a {
+
+  color: #fff;
+    display: block;
+
+    z-index: 30;
+
+  }
+
+  .active1 {
+
+    transform: translateX(0%);
+
+  }
+
+  .active2 {
+
+    transform: translateX(-60vw);
+
+  }
+
+  .liFont  {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+  }
+
+.liFont span {
+
+  height:100%;
+
+  display: inline-block;
+
+  width: 92px;
+
+}
+
+  .navLogo {
+
+  display: inline;
+
+  position: fixed;
+
+  bottom: 20px;
+
+  right: 30px;
+
+  height: 60px;
+
+  width: 60px;
+
+  padding: 7px;
+
+  background-color: #0C4076;
+
+  border-radius: 50px;
+
+  border: 2px solid #333;
+
+  transition: all 600ms ease-in-out;
+
+  z-index: 99;
+
+  }
+
+  header h1 {
+
+    font-size: 55px;
+
+  }
+
+  header .half:first-of-type {
+
+    order: 2;
+
+    padding-top: 250px;
+
+  }
+
+  header .half:last-of-type {
+
+    order: 1;
+
+    padding-top: 30px;
+
+  }
+
+  header .half:last-of-type img {
+
+    width: 90%;
+
+  }
+
+  .btnHld {
+
+    padding-top: 25px;
+
+  }
+
+
+
+}
+
+@media(max-width: 768px) {
+  header .row {
+ padding-top: 30px;
+  }
+  .credits {
+  display: block;
+}
+.half13.pt-50:nth-of-type(2) {
+  padding-top: 15px;
+
+}
+ /* .imgs img, .imgs img:last-of-type {
+
+    margin-bottom: 20px;
+
+    width: 90%;
+
+  } */
+
+  .col3 {
+
+    display: inline-block;
+
+    width: 100%;
+
+  }
+
+  #kontakt .col3 img {
+
+    padding-bottom: 90px;
+
+  }
+
+}
+
+@keyframes rotate {
+
+  to {
+
+    transform: rotate(360deg);
+
+  }
+
+}
+@keyframes fadingIn {
+  from {opacity: 0;}
+  to {opacity:1;}
+
+}
+      /* number of images
+
+.photoCarousel {
+  margin: 0;
+  height: 100vh;
+  padding-left: 35px;
+  display: grid;
+  place-content: center start;
+  background: #CDB380;
+}
+.gallery {
+  --d: 10s;
+  display: grid;
+  width: 220px;
+}
+
+.gallery > img {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 10px solid #f2f2f2;
+  box-shadow: 0 0 4px #0007;
+  z-index: 2;
+  animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
+}
+
+.gallery img:last-child {
+  animation-name: slide, z-order-last;
+}
+
+.gallery > img:nth-child(1) {
+  animation-delay: calc(0*var(--d));
+  --r: 18deg;
+}
+
+.gallery > img:nth-child(2) {
+  animation-delay: calc(-0.2*var(--d));
+  --r: 16deg;
+}
+
+.gallery > img:nth-child(3) {
+  animation-delay: calc(-0.4*var(--d));
+  --r: -4deg;
+}
+
+.gallery > img:nth-child(4) {
+  animation-delay: calc(-0.6*var(--d));
+  --r: -4deg;
+}
+
+.gallery > img:nth-child(5) {
+  animation-delay: calc(-0.8*var(--d));
+  --r: 6deg;
+}
+
+@keyframes slide {
+  10% {
+    transform: translateX(100%) translateY(-80%) rotate(var(--r));
+  }
+  0%, 100%, 20% {
+    transform: translateX(0%) translateY(0%) rotate(var(--r));
+  }
+}
+@keyframes z-order {
+  10%, 20% {
+    z-index: 1;
+  }
+  80% {
+    z-index: 2;
+  }
+}
+@keyframes z-order-last {
+  10%, 20% {
+    z-index: 1;
+  }
+  90% {
+    z-index: 2;
+  }
+}
+@media(max-width: 768px) {
+.photoCarousel {
+  height: 70vh;
+} } */
+</style>
+
+<body>
+
+	<header class="relative">
+
+    <div class="bkg"></div>
+
+  <div class="overlaid"></div>
+
+		<nav>
+
+			<img src="logo-mali-beli.png" class="navLogo">
+
+			<ul class="ulNav">
+
+				<li class="liNav"><a href="#">Početak</a></li>
+
+				<li class="liNav"><a href="#usluge">Usluge</a></li>
+
+				<li class="liNav"><a href="#onama">O nama</a></li>
+
+				<li class="liNav"><a href="#kontakt">Kontakt</a></li>
+
+			</ul>
+
+		</nav>
+
+		<div class="row">
+
+			<div class="half pt-50">
+
+				<div class="txtHld txtCntr">
+          <h1 data-aos="zoom-out-up" data-aos-duration="2000" style="margin: 0.05em;">Oasis Center</h1>
+          <img src="logo-beli.png" style="height: 150px;">
+					<h4 data-aos="zoom-in" data-aos-duration="2500">Luxury treatments in Belgrade</h4>
+
+					<p class="btnHld" data-aos="fade-up" data-aos-duration="3000"><a href="#usluge" class="btn" >Dobro došli</a></p>
+
+				</div>
+
+			</div>
+
+			<div class="half pt-50" data-aos="zoom-in" data-aos-duration="2000">
+
+        <div class="relative">
+
+          <img src="slike/zena4.jpg"class="sliderimg sld curr">
+          <img src="slike/madero.jpg"class="sliderimg sld">
+
+          <img src="slike/zena-sa-santimetrom.jpg"class="sliderimg sld">
+          <img src="slike/pressotherapy.png"class="sliderimg sld">
+
+          <img src="slike/zena2.png"class="sliderimg sld">
+
+
+
+
+        </div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+
+
+	<section id="usluge" class="bow">
+
+		<div class="row">
+
+      <div class="half13 pt-20 imgs txtCntr">
+        <img src="slike/wellness.jpg" style="display: inline-block;height: 100%; object-fit: cover;">
+
+      </div>
+
+			<div class="half23 pt-50">
+
+				<div class="txtHld">
+          <h2  data-aos="zoom-in-down" data-aos-duration="1000">Oaza u centru Beograda</h2>
+
+          <p data-aos="fade-right" data-aos-duration="1300">Vođeni idejom da u Beograd prenesemo prefinjenost i egzotiku Dubaija, osnovali smo ovaj luksuzni centar za negu tela.</p>
+
+          <p data-aos="fade-right" data-aos-duration="1300">Naša Oaza se prostire na 300m<sup>2</sup>, na tri nivoa i ima sve što je potrebno za potpuni oporavak. Posvećeno osoblje, vrhunska oprema i isključivo najkvalitetniji preparati će učiniti da doživite potpuni reset od svakodnevnice.</p>
+
+          <p data-aos="fade-right" data-aos-duration="1000">Zastanite za trenutak i posvetite se sebi. Zdravlje je ipak najdragocenije što imamo.</p>
+
+          <p> <a href="" class="btn">Zakaži termin</a></p>
+         
+        </div>
+
+      </div>
+
+		</div>
+
+	</section>
+
+
+
+  <section id="onama" class="boor">
+
+    <div class="txt-holder">
+
+      <h2 class="pt-175">Tretmani</h2>
+
+      <p>Naši tretmani su osmišljeni tako da ostvaruju maksimalni učinak i ubrzaju postizanje željenih rezultata.</p>
+
+    </div>
+
+    <div class="owl-carousel owl-theme">
+
+      <div class="blogCard">
+
+        <div style="position: relative;">
+
+          <img src="slike/pressotherapy.jpg">
+
+          <img src="logo-mali-beli.png" style="height: 15%; width: auto;position: absolute; right: 5%; bottom: 5%; z-index: 10;">
+
+        </div>
+
+        <div class="angled rotation2"></div>
+
+        <div class="blogCardText">
+
+          <i class="fas fa-quote-right"></i>
+
+          <a class="a" href=""><h3>- Pressotherapy</h3></a>
+
+          <p>Limfna drenaža</p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="blogCard">
+
+        <div style="position: relative;">
+
+          <img src="slike/ems.jpg">
+
+          <img src="logo-mali-beli.png" style="height: 15%; width: auto;position: absolute; right: 5%; bottom: 5%; z-index: 10;">
+
+        </div>
+
+        <div class="angled rotation2"></div>
+
+        <div class="blogCardText">
+
+          <i class="fas fa-quote-right"></i>
+
+          <a class="a" href=""><h3>- EMS</h3></a>
+
+          <p>Elektro-mišićna stimulacija</p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="blogCard">
+
+        
+
+        <div style="position: relative;">
+
+          <img src="slike/body-peeling.jpg">
+
+          <img src="logo-mali-beli.png" style="height: 15%; width: auto;position: absolute; right: 5%; bottom: 5%; z-index: 10;">
+
+        </div>
+
+
+
+        <div class="angled rotation2"></div>
+
+
+
+        <div class="blogCardText">
+
+          <i class="fas fa-quote-right"></i>
+
+          <a class="a" href=""><h3>- Body Peeling</h3></a>
+
+          <p>tamjan, med i mleko, cvet lotusa, lavanda, shea butter, rose&love...</p>
+
+        </div>
+
+
+
+      </div>
+
+<div class="blogCard">
+
+        
+
+        <div style="position: relative;">
+
+          <img src="slike/body-wrap.jpg">
+
+          <img src="logo-mali-beli.png" style="height: 15%; width: auto;position: absolute; right: 5%; bottom: 5%; z-index: 10;">
+
+        </div>
+
+
+
+        <div class="angled rotation2"></div>
+
+
+
+        <div class="blogCardText">
+
+          <i class="fas fa-quote-right"></i>
+
+          <a class="a" href=""><h3>- Body Wrap</h3></a>
+
+          <p>Duboka hidratacija i trajna zaštita kože</p>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="blogCard">
+
+        
+
+        <div style="position: relative;">
+
+          <img src="slike/body-sculpt.jpg">
+
+          <img src="logo-mali-beli.png" style="height: 15%; width: auto;position: absolute; right: 5%; bottom: 5%; z-index: 10;">
+
+        </div>
+
+
+
+        <div class="angled rotation2"></div>
+
+
+
+        <div class="blogCardText">
+
+          <i class="fas fa-quote-right"></i>
+
+          <a class="a" href=""><h3>- Body Sculpt</h3></a>
+
+          <p>Savršeno oblikovanje tela</p>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="blogCard">
+
+        
+
+        <div style="position: relative;">
+
+          <img src="slike/vacuslim.jpg">
+
+          <img src="logo-mali-beli.png" style="height: 15%; width: auto;position: absolute; right: 5%; bottom: 5%; z-index: 10;">
+
+        </div>
+
+
+
+        <div class="angled rotation2"></div>
+
+
+
+        <div class="blogCardText">
+
+          <i class="fas fa-quote-right"></i>
+
+          <a class="a" href=""><h3>- Vacuum Slim</h3></a>
+
+          <p>Mršavljenje i brza eliminacija celulita</p>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+
+  </section>
+
+
+  <section id="fitnes" class="bow">
+
+    <div class="row">
+
+      <div class="half13 pt-50">
+
+        <div class="txtHld">
+          <h2  data-aos="zoom-in-down" data-aos-duration="400">Personalni treninzi</h2>
+
+          <p data-aos="fade-right" data-aos-duration="500">Desetogodišnje iskustvo rada u Dubaiju sa najzahtevnijim klijentima ugrađeno je u kreairanje programa vežbanja posebno prilagođenih Vašim potrebama.</p>
+
+          <p data-aos="fade-right" data-aos-duration="700">Vođeni treninzi, istezanje i primena najsavremenijih metoda, ali i opreme.</p>
+
+          <p data-aos="fade-right" data-aos-duration="900">Kreairanje programa vežbanja posebno prilagođenih da odgovaraju Vašim potrebama i mogućnostima.</p>
+
+          <p data-aos="fade-right" data-aos-duration="1100">COMPEX PRO za profesionalne treninge.</p>
+
+          <p data-aos="fade-up" data-aos-duration="1300"><a href="" class="btn">Galerija slika</a></p>
+
+        </div>
+
+      </div>
+
+      <div class="half13 pt-20 imgs txtCntr">
+        <img src="slike/zora-avala.jpg" style="display: inline-block;height: 100%; object-fit: cover;">
+
+      </div>
+      <div class="half13 pt-50">
+
+        <div class="txtHld">
+          <h2  data-aos="zoom-in-down" data-aos-duration="1000">Plan ishrane</h2>
+
+          <p data-aos="fade-right" data-aos-duration="1300">Specijalno osmišljen plan unosa odgovarajućih hranljivih materija doprineće maksimalnom učinku Vašeg vežbanja i tretmana.</p>
+
+          <p data-aos="fade-right" data-aos-duration="1300">Naši planovi ishrane su prilagođeni savremenom načinu života i ne zahtevaju puno vremena.</p>
+
+          <p data-aos="fade-right" data-aos-duration="1300">Ako se ne snalazite u kuhinji ili prosto nemate vremena za to, naši partneri vrše pripremu i dostavu nutritivno vrhunskih obroka na dnevnom nivou, po povoljnim cenama.</p>
+
+          <p data-aos="fade-up" data-aos-duration="1300"><a href="" class="btn">Galerija slika</a></p>
+          
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <section id="onama" class="boor">
+
+    <div class="txt-holder">
+
+      <h2 class="pt-175">Članarine</h2>
+      <hr>
+      <div style="display: flex; flex-direction: row;flex-wrap: wrap; align-items: flex-start;">
+      <div class="half13 pt-50">
+
+        <div class="infoCard">
+
+            <h2 class="borderShaded">Basic</h2>
+
+            <hr>
+
+            <p>dostupno 7 termina</p>
+
+            <p>EMS</p>
+
+            <p>Masaže</p>
+
+            <p>Vođeni treninzi</p>
+
+            <hr>
+
+            <p>250e mesečno</p>
+
+        </div>
+
+      </div>
+
+      <div class="half13 pt-50">
+
+        <div class="infoCard">
+
+            <h2 class="borderShaded">Standard</h2>
+
+            <hr>
+
+            <p>dostupno 12 termina</p>
+            <p>EMS</p>
+
+            <p>Masaže</p>
+            <p>Pressotherapy</p>
+
+            <p>Theragun</p>
+            <p>Shiatsu</p>
+            <p>Masažer stopala</p>
+            <p>Vođeni treninzi</p>
+
+            <p>COMPEX PRO</p>
+            <hr>
+
+            <p>350e mesečno</p>
+            
+        </div>
+
+      </div>
+
+      <div class="half13 pt-50">
+
+        <div class="infoCard">
+
+            <h2 class="borderShaded">Superior</h2>
+
+            <hr>
+
+            <p>dostupno 15 termina</p>
+            <p>EMS</p>
+
+            <p>Masaže</p>
+            <p>Pressotherapy</p>
+
+            <p>Theragun</p>
+            <p>Shiatsu</p>
+            <p>Masažer stopala</p>
+            <p>Body Peeling</p>
+            <p class="bold">Body Wrap</p>
+            <p class="bold">Royal Treatment</p>
+            <p class="bold">Body Sculpting</p>
+            <p>Vođeni treninzi</p>
+            <p>Nutrition plan</p>
+            <p>COMPEX PRO</p>
+            <hr>
+
+            <p>500e mesečno</p>
+        </div>
+
+      </div>
+ </div>
+    </div>
+
+  </section>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6542.558618655748!2d20.481261705740803!3d44.792792807336006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a71ce13e0d033%3A0xb44633b461aec0e9!2sEmpire%20Luxury%20Apartments!5e0!3m2!1ssr!2srs!4v1674248826664!5m2!1ssr!2srs" width="100%" height="450" style="border-top: 2px solid #222; border-bottom: 2px solid #f7f7f7;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div id="kontakt">
+
+
+
+    <div class="row img-bg">
+
+      <div class="col3">
+
+        <div class="txt-holder">
+
+          <h2 class="pt-175">Kontakt</h2>
+
+          <hr>
+
+          <h5>Telefon:</h5>
+
+          <p>Recepcija:</p>
+          <p class="lead">+381 63 123456789</p>
+
+          <p>Zorica Dimitrijević:</p>
+          <p class="lead">+381 64 1230001</p>
+
+          <h5 class="lead">e-Mail:</h5>
+
+          <p>recepcija@oasiscenterlux.com</p>
+
+          <p>zora@oasiscenterlux.com</p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col3">
+
+        <div class="txt-holder">
+
+          <h2 class="pt-175">Dođite do nas</h2>
+
+          <hr>
+
+          <h5 class="lead">Adresa:</h5>
+          <p>Davida Pajića 7, Vračar</p>
+          <h5 class="lead">Radno vreme:</h5>
+          <p>Ponedeljak-petak: 08:00-24:00</p>
+          <p>Subotom i nedeljom: 09:00-23:00</p>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col3 txtCntr">
+
+        <img src="logo-beli-sa-slovima.png" style="width:60%; padding-top: 60px;">
+
+      </div>
+
+    </div>
+
+
+
+<div style="background-color: #f2f2f2; color: #333; padding: 10px 0; text-align: center;">
+
+  <h4 style="margin: 7px 0; padding-left: 10px;">Izradio <a href="https://www.linkmarketing.rs/" style="font-weight: bold; font-size: 18px;">Link Marketing</a> tim 2023.</h4>
+
+
+</div>
+
+<script type="text/javascript">
+
+  var loader = document.querySelector('.loader, .preload');
+
+function preload() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    setTimeout(() => (
+    loader.style.display = 'none'), 500);
+  }, 1000);
+}
+
+$('li.liNav').on('click', function (e) {
+  window.location.href= $(this).children('a').attr("href");
+  return false;
+});
+
+$(".navLogo, .overlaid, .liNav").click(function(){
+  if ($(window).width() < 1050) {
+    $('ul').toggleClass('active1');
+    $('.navLogo').toggleClass('active2');
+    $('.overlaid').toggleClass('overlay-appear');
+    }
+  else {
+    return null;
+  }
+});
+
+// Logo and Navbar change on scroll:  
+
+$(window).scroll(function () {
+  if ($(document).scrollTop() > ($('nav').height())+120) {
+    $('nav').addClass('scrolled-nav');
+    } else {
+    $('nav').removeClass('scrolled-nav');
+    }
+  });
+
+function goBack() {
+      window.history.back();
+    }
+
+setTimeout(()=> {
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 70,
+    backSpeed: 40
+  });
+}, 1000)
+
+preload();
+
+AOS.init();
+
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+});
+
+var owl = $('.owl-carousel');
+
+owl.owlCarousel({
+    items:5,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:5,
+        }
+    }
+});
+
+
+const slides = document.querySelectorAll('.sliderimg');
+//const next = document.querySelector('#nex');
+//const prev = document.querySelector('#pre');
+const auto = true; // Auto scroll
+const intervalTime = 5000;
+let slideInterval;
+
+const nextSlide = () => {
+  // Get current class
+  const current = document.querySelector('.curr');
+  // Remove current class
+  current.classList.remove('curr');
+  // Check for next slide
+  if (current.nextElementSibling) {
+    // Add current to next sibling
+    current.nextElementSibling.classList.add('curr');
+  } else {
+    // Add current to start
+    slides[0].classList.add('curr');
+  }
+  setTimeout(() => current.classList.remove('curr'));
+};
+
+const prevSlide = () => {
+  // Get current class
+  const current = document.querySelector('.curr');
+  // Remove current class
+  current.classList.remove('curr');
+  // Check for prev slide
+  if (current.previousElementSibling) {
+    // Add current to prev sibling
+    current.previousElementSibling.classList.add('curr');
+  } else {
+    // Add current to last
+    slides[slides.length - 1].classList.add('curr');
+  }
+  setTimeout(() => current.classList.remove('curr'));
+};
+
+// Button events 
+/*
+next.addEventListener('click', e => {
+  nextSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+
+prev.addEventListener('click', e => {
+  prevSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+*/
+// Auto slide
+if (auto) {
+  // Run next slide at interval time
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
+</script>
+
+</body>
+
+</html>

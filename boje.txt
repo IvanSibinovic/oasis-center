@@ -1,0 +1,4 @@
+tamnoplava: #225a5d
+svetloplava:  #0092a3
+tamnozelena: #016535
+svetlozelena: #369f53
